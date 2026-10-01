@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1F3024;
+    background-color: #F4EFE6;
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom mobile glassmorphism & phone frames */
+.iphone-frame {
+  box-shadow: 
+    0 0 0 10px #242B25,
+    0 0 0 12px #4B554D,
+    0 35px 80px -20px rgba(20, 38, 24, 0.42),
+    0 15px 30px -10px rgba(20, 38, 24, 0.2);
+}
+
+.iphone-frame-light {
+  box-shadow: 
+    0 0 0 9px #D8D2C6,
+    0 0 0 11px #BAAF9F,
+    0 30px 70px -15px rgba(45, 55, 40, 0.25),
+    0 10px 20px -8px rgba(45, 55, 40, 0.15);
+}
+
+/* Subtle organic grain overlay simulation */
+.earthy-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(224, 218, 206, 0.7);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

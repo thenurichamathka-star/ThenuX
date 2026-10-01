@@ -1,0 +1,6 @@
+{
+  "name": "Root & Bloom",
+  "description": "Modern earthy mobile app UI design for Root & Bloom, an eco tracking app for youth with impact dashboards, community feed, circular marketplace, and Colombo impact map.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
